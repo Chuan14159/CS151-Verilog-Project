@@ -1,4 +1,4 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sources_1/new/insDec.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module insDec
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sim_1/new/insDec_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module insDec_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile64x32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sim_1/new/RegFile64x32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile64x32_tb

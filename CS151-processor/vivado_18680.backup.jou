@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Nov 30 20:45:03 2018
+# Process ID: 18680
+# Current directory: D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22016 D:\Fall 2018\CS151\CS151-Verilog-Project\CS151-processor\CS151-processor.xpr
+# Log file: D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/vivado.log
+# Journal file: D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.xpr}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+source instruction_tb.tcl
+add_bp {D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sources_1/new/instruction.v} 32
+remove_bps -file {D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sources_1/new/instruction.v} -line 32
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source instruction_tb.tcl
+close_sim
+launch_simulation
+source instruction_tb.tcl
+close_sim
+launch_simulation
+source instruction_tb.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_files -from_files {{D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sources_1/new/insDec.v}} -to_files {{D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sources_1/new/instruction.v}} -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_files -from_files {{D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sim_1/new/insDec_tb.v}} -to_files {{D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sim_1/new/instruction_tb.v}} -filesets [get_filesets *]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+launch_simulation
+update_compile_order -fileset sim_1
+launch_simulation
+source insDec_tb.tcl
+close_sim
+close_sim

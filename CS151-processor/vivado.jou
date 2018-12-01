@@ -2,51 +2,129 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Nov 30 20:45:03 2018
-# Process ID: 18680
+# Start of session at: Fri Nov 30 21:49:02 2018
+# Process ID: 2300
 # Current directory: D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22016 D:\Fall 2018\CS151\CS151-Verilog-Project\CS151-processor\CS151-processor.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8420 D:\Fall 2018\CS151\CS151-Verilog-Project\CS151-processor\CS151-processor.xpr
 # Log file: D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/vivado.log
 # Journal file: D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.xpr}
 update_compile_order -fileset sources_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-launch_simulation
-source instruction_tb.tcl
-add_bp {D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sources_1/new/instruction.v} 32
-remove_bps -file {D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sources_1/new/instruction.v} -line 32
+close [ open {D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sources_1/new/CtrlOut.v} w ]
+add_files {{D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sources_1/new/CtrlOut.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files {{D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sources_1/new/CtrlOut.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sources_1/new/CtrlOut.v}}
+file delete -force {D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sources_1/new/CtrlOut.v}
+remove_files  {{D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sources_1/new/CtrlOut.v}}
+export_ip_user_files -of_objects  [get_files {{D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sim_1/new/insDec_tb.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sim_1/new/insDec_tb.v}}
+file delete -force {D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sim_1/new/insDec_tb.v}
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sim_1/new/Controller_tb.v} w ]
+add_files -fileset sim_1 {{D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sim_1/new/Controller_tb.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_files -from_files {{D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sources_1/new/Controller.v}} -to_files {{D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sources_1/new/insDec.v}} -filesets [get_filesets *]
+update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs synth_1 -jobs 4
 wait_on_run synth_1
-close_sim
-launch_simulation
-source instruction_tb.tcl
-close_sim
-launch_simulation
-source instruction_tb.tcl
-close_sim
-launch_simulation
-source instruction_tb.tcl
-update_compile_order -fileset sources_1
-update_compile_order -fileset sim_1
-update_files -from_files {{D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sources_1/new/insDec.v}} -to_files {{D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sources_1/new/instruction.v}} -filesets [get_filesets *]
-update_compile_order -fileset sources_1
-update_compile_order -fileset sim_1
-update_files -from_files {{D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sim_1/new/insDec_tb.v}} -to_files {{D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sim_1/new/instruction_tb.v}} -filesets [get_filesets *]
-update_compile_order -fileset sim_1
-update_compile_order -fileset sim_1
-update_compile_order -fileset sim_1
-update_compile_order -fileset sim_1
 reset_run synth_1
 launch_runs synth_1 -jobs 4
 wait_on_run synth_1
-launch_simulation
-launch_simulation
 update_compile_order -fileset sim_1
 launch_simulation
-source insDec_tb.tcl
+launch_simulation
+launch_simulation
+source Controller_tb.tcl
+close_sim
+launch_simulation
+source Controller_tb.tcl
+close [ open {D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sources_1/new/RegFile.v} w ]
+add_files {{D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sources_1/new/RegFile.v}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sim_1/new/RegFile64x32_tb.v} w ]
+add_files -fileset sim_1 {{D:/Fall 2018/CS151/CS151-Verilog-Project/CS151-processor/CS151-processor.srcs/sim_1/new/RegFile64x32_tb.v}}
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source Controller_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top RegFile64x32_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top RegFile64x32 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source RegFile64x32_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Controller_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Controller [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top RegFile64x32_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source RegFile64x32_tb.tcl
+close_sim
+launch_simulation
+source RegFile64x32_tb.tcl
+close_sim
+launch_simulation
+source RegFile64x32_tb.tcl
+close_sim
+launch_simulation
+source RegFile64x32_tb.tcl
+close_sim
+launch_simulation
+source RegFile64x32_tb.tcl
+close_sim
+launch_simulation
+source RegFile64x32_tb.tcl
+close_sim
+launch_simulation
+source RegFile64x32_tb.tcl
+close_sim
+launch_simulation
+source RegFile64x32_tb.tcl
+close_sim
+launch_simulation
+source RegFile64x32_tb.tcl
 close_sim
 close_sim
