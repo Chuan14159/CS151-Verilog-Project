@@ -48,3 +48,5 @@ launch_simulation
 update_compile_order -fileset sim_1
 launch_simulation
 source insDec_tb.tcl
+close_sim
+close_sim
