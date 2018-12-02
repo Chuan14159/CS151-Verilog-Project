@@ -37,7 +37,7 @@ module sub(
     integer s;
     integer C;
     assign Sum = A-B;
-    assign Beta = ~B - 1;
+    assign Beta = ~B + 1'b1;
     assign OverflowCheck = A+Beta;
     assign ov = A+Beta;
  always@(*) begin
@@ -53,15 +53,16 @@ module sub(
             C = 0;
         end
     always@(*) begin
-            if (A[31] == B[31])begin
-                if (A[31] != ov[31] )
+        if (A[31] != B[31])begin
+                if (A[31] != ov[31] )    
                     OFC = 1;
                 else
                     OFC = 0;
                 end
-            else
-                OFC = 0;
-            end
+        else begin
+            OFC = 0;
+                end
+                end
     assign Overflow = OFC;
     assign Carry = C;
     assign Equal = s;
