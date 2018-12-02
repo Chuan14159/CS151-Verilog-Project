@@ -51,6 +51,8 @@ module sub(
             C = 1;
         else
             C = 0;
+        if (A==B)
+            C=0;
         end
     always@(*) begin
         if (A[31] != B[31])begin
