@@ -30,7 +30,7 @@ module CS151_SHIFT(
 assign out = a<<b;
 integer OFC;
 always@(*) begin
-            if (a[31] != out[31] )
+            if (out < a  )
                 OFC = 1;
             else
                 OFC = 0;
