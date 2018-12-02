@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Dec  2 00:13:26 2018
+# Process ID: 604
+# Current directory: D:/Fall 2018/CS151/CS151-Verilog-Project/2-1 mux
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8052 D:\Fall 2018\CS151\CS151-Verilog-Project\2-1 mux\2-1 mux.xpr
+# Log file: D:/Fall 2018/CS151/CS151-Verilog-Project/2-1 mux/vivado.log
+# Journal file: D:/Fall 2018/CS151/CS151-Verilog-Project/2-1 mux\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Fall 2018/CS151/CS151-Verilog-Project/2-1 mux/2-1 mux.xpr}
+update_compile_order -fileset sources_1

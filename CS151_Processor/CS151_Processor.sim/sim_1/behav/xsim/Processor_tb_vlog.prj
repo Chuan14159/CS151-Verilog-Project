@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CS151_Processor.srcs/sources_1/new/ALU32bit.v" \
+"../../../../CS151_Processor.srcs/sources_1/new/CS151-Processor.v" \
+"../../../../../modules/CS151_MOV/CS151_MOV.srcs/sources_1/new/CS151_MOV.v" \
+"../../../../../modules/OR/OR.srcs/sources_1/new/CS151_Or.v" \
+"../../../../../modules/SHIFT/SHIFT.srcs/sources_1/new/CS151_SHIFT.v" \
+"../../../../../modules/XOR/XOR.srcs/sources_1/new/CS151_XOR.v" \
+"../../../../../modules/NOT/NOT.srcs/sources_1/new/CS151_not.v" \
+"../../../../../modules/CS151-processor/CS151-processor.srcs/sources_1/new/Controller.v" \
+"../../../../../modules/2-1 mux/2-1 mux.srcs/sources_1/new/Mux2_1.v" \
+"../../../../../modules/CS151-processor/CS151-processor.srcs/sources_1/new/RegFile.v" \
+"../../../../../modules/adder/adder.srcs/sources_1/new/adder.v" \
+"../../../../../modules/And/And.srcs/sources_1/new/and.v" \
+"../../../../CS151_Processor.srcs/sources_1/new/insMem.v" \
+"../../../../../modules/Sign_extension/Sign_extension.srcs/sources_1/new/sign_extend.v" \
+"../../../../../modules/subtractor/subtractor.srcs/sources_1/new/sub.v" \
+"../../../../CS151_Processor.srcs/sim_1/new/Processor_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
