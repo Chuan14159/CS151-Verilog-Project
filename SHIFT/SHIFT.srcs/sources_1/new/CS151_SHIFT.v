@@ -28,15 +28,12 @@ module CS151_SHIFT(
    // output [6:0]overflowcheck
     );
 assign out = a<<b;
-wire [6:0] OverflowCheck;
-assign OverflowCheck = a<<b;
 integer OFC;
 always@(*) begin
-        if (OverflowCheck != out )
-            OFC = 1;
-        else
-            OFC = 0;
-        end
+            if (a[5] != out[5] )
+                OFC = 1;
+            else
+                OFC = 0;
+            end
 assign overflow = OFC;
-//assign overflowcheck = OverflowCheck;
 endmodule

@@ -31,22 +31,33 @@ module sub(
     wire [6:0] OverflowCheck;
     integer OFC;
     integer s;
+    integer C;
     assign Sum = A-B;
     assign OverflowCheck = A-B;
-    always@(*) begin
+ always@(*) begin
             if (Sum == 6'b000000 )
                 s = 1;
             else
                 s = 0;
             end
-    assign Equal = s;
-    always@(*) begin
+  always@(*) begin
         if (OverflowCheck !== Sum )
-            OFC = 1;
+            C = 1;
         else
-            OFC = 0;
+            C = 0;
         end
+    always@(*) begin
+            if (A[5] == B[5])begin
+                if (A[5] != Sum[5] )
+                    OFC = 1;
+                else
+                    OFC = 0;
+                end
+            else
+                OFC = 0;
+            end
     assign Overflow = OFC;
-    assign Carry = OFC;
+    assign Carry = C;
+    assign Equal = s;
     
 endmodule

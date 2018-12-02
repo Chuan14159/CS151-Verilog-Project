@@ -31,12 +31,23 @@ wire [6:0] OverflowCheck;
 integer OFC;
 assign Sum = A+B;
 assign OverflowCheck = A+B;
+integer C;
 always@(*) begin
     if (OverflowCheck !== Sum )
-        OFC = 1;
+        C = 1;
     else
-        OFC = 0;
+        C = 0;
     end
+always@(*) begin
+        if (A[5] == B[5])begin
+            if (A[5] != Sum[5] )
+                OFC = 1;
+            else
+                OFC = 0;
+            end
+        else
+            OFC = 0;
+        end
 assign Overflow = OFC;
-assign Carry = OFC;
+assign Carry = C;
 endmodule
