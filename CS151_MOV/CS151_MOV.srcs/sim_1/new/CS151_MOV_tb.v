@@ -21,19 +21,19 @@
 
 
 module CS151_MOV_tb;
-   wire [5:0]out;
-    reg [5:0]a;
+   wire [31:0]out;
+    reg [31:0]a;
     
     CS151_MOV inst1(.a(a),.out(out));
     initial begin
         
-        a= 6'b000000;
-        #10 a= 6'b000001;
-        #10 a= 6'b101011;
-        #10 a= 6'H0;
-        #10 a= 6'H1;
-        #10 a= 6'b111111;
-        #10 a= 6'HF;
+        a= 32'b000000;
+        #10 a= 32'b000001;
+        #10 a= 32'b101011;
+        #10 a= 32'H0;
+        #10 a= 32'H1;
+        #10 a= 32'b111111;
+        #10 a= 32'HF;
         $finish;
         end
 endmodule

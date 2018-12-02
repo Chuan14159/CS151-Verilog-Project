@@ -21,16 +21,16 @@
 
 
 module CS151_SHIFT(
-    input [5:0]a,
-    input [5:0]b,
-    output [5:0]out,
+    input [31:0]a,
+    input [31:0]b,
+    output [31:0]out,
     output overflow
-   // output [6:0]overflowcheck
+
     );
 assign out = a<<b;
 integer OFC;
 always@(*) begin
-            if (a[5] != out[5] )
+            if (a[31] != out[31] )
                 OFC = 1;
             else
                 OFC = 0;

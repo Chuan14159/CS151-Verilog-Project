@@ -21,22 +21,22 @@
 
 
 module CS151_SHIFT_tb;
-    wire [5:0]out;
+    wire [31:0]out;
     wire overflow;
    // wire [6:0] overflowcheck;
-    reg [5:0]a;
-    reg [5:0]b;
+    reg [31:0]a;
+    reg [31:0]b;
     
     CS151_SHIFT inst1(.a(a),.b(b),.out(out),.overflow(overflow));
     initial begin
         
-        a= 6'b000000; b=1;
-        #10 a= 6'b000001; b=1;
-        #10 a= 6'b111111; b=1;
-        #10 a= 6'H0; b=2;
-        #10 a= 6'H1; b=3;
-        #10 a= 6'b111111; b=7;
-        #10 a= 6'HF; b=0;
+        a= 32'b000000; b=1;
+        #10 a= 32'b000001; b=1;
+        #10 a= 32'b111111; b=1;
+        #10 a= 32'H0; b=2;
+        #10 a= 32'H1; b=3;
+        #10 a= 32'b111111; b=7;
+        #10 a= 32'HF; b=0;
         $finish;
         end
 endmodule

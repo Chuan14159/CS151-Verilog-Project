@@ -21,15 +21,15 @@
 
 
 module CS151_XOR(
-    input [5:0]a,
-    input [5:0]b,
-    output [5:0]out,
+    input [31:0]a,
+    input [31:0]b,
+    output [31:0]out,
     output equal
     );
 assign out = a^b;
 integer e;
 always@(*) begin
-    if (out == 6'b000000)
+    if (out == 32'b00000000000000000000000000000000)
         e = 1;
     else
         e = 0;

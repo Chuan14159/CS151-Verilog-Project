@@ -21,21 +21,21 @@
 
 
 module CS151_XOR_tb;
-    wire [5:0]out;
+    wire [31:0]out;
     wire equal;
-    reg [5:0]a;
-    reg [5:0]b;
+    reg [31:0]a;
+    reg [31:0]b;
     
     CS151_XOR inst1(.a(a),.b(b),.out(out),.equal(equal));
     initial begin
         
-        a= 6'b000000; b=6'b111111;
-        #10 a= 6'b111111; b=6'b000001;
-        #10 a= 6'b111111; b=6'b111111;
-        #10 a= 6'H0; b=6'H0014;
-        #10 a= 6'H1; b=6'H000F;
-        #10 a= 6'b111111; b=6'H0004;
-        #10 a= 6'HF; b=6'HF;
+        a= 32'b000000; b=32'b111111;
+        #10 a= 32'b111111; b=32'b000001;
+        #10 a= 32'b111111; b=32'b111111;
+        #10 a= 32'H0; b=32'H0014;
+        #10 a= 32'H1; b=32'H000F;
+        #10 a= 32'b111111; b=32'H0004;
+        #10 a= 32'HF; b=32'HF;
         $finish;
         end
 endmodule

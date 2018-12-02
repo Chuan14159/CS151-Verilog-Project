@@ -21,21 +21,21 @@
 
 
 module sub(
-   input [5:0]A,
-    input [5:0]B,
-    output [5:0]Sum,
+   input [31:0]A,
+    input [31:0]B,
+    output [31:0]Sum,
     output [1:0]Equal,
     output [1:0]Carry,
     output [1:0]Overflow
     );
-    wire [6:0] OverflowCheck;
+    wire [32:0] OverflowCheck;
     integer OFC;
     integer s;
     integer C;
     assign Sum = A-B;
     assign OverflowCheck = A-B;
  always@(*) begin
-            if (Sum == 6'b000000 )
+            if (Sum == 32'b00000000000000000000000000000000 )
                 s = 1;
             else
                 s = 0;
@@ -47,8 +47,8 @@ module sub(
             C = 0;
         end
     always@(*) begin
-            if (A[5] == B[5])begin
-                if (A[5] != Sum[5] )
+            if (A[31] == B[31])begin
+                if (A[31] != Sum[31] )
                     OFC = 1;
                 else
                     OFC = 0;

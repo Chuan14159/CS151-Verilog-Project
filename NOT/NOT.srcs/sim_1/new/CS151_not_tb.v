@@ -21,18 +21,18 @@
 
 
 module CS151_not_tb;
-    wire [5:0]out;
-    reg [5:0]a;
+    wire [31:0]out;
+    reg [31:0]a;
     
     CS151_not inst1(.a(a),.out(out));
     initial begin
         
-        a= 6'b000000;
-        #10 a= 6'b111111;
-        #10 a= 6'H0;
-        #10 a= 6'H1;
-        #10 a= 6'b101001;
-        #10 a= 6'b111000;
+        a= 32'b000000;
+        #10 a= 32'b111111;
+        #10 a= 32'H0;
+        #10 a= 32'H1;
+        #10 a= 32'b101001;
+        #10 a= 32'b111000;
         $finish;
         end
 endmodule

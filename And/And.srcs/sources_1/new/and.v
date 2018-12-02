@@ -21,9 +21,9 @@
 
 
 module andder(
-    input [5:0]a,
-    input [5:0]b,
-    output [5:0]andder
+    input [31:0]a,
+    input [31:0]b,
+    output [31:0]andder
     );
 assign andder = a&b;
 endmodule
