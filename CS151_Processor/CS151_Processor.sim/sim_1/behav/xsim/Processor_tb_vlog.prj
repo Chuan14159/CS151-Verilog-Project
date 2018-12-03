@@ -9,8 +9,10 @@ verilog xil_defaultlib  \
 "../../../../../modules/NOT/NOT.srcs/sources_1/new/CS151_not.v" \
 "../../../../../modules/CS151-processor/CS151-processor.srcs/sources_1/new/Controller.v" \
 "../../../../../modules/2-1 mux/2-1 mux.srcs/sources_1/new/Mux2_1.v" \
+"../../../../CS151_Processor.srcs/sources_1/new/PC.v" \
 "../../../../../modules/CS151-processor/CS151-processor.srcs/sources_1/new/RegFile.v" \
 "../../../../../modules/adder/adder.srcs/sources_1/new/adder.v" \
+"../../../../CS151_Processor.srcs/sources_1/new/adder6bit.v" \
 "../../../../../modules/And/And.srcs/sources_1/new/and.v" \
 "../../../../CS151_Processor.srcs/sources_1/new/insMem.v" \
 "../../../../../modules/Sign_extension/Sign_extension.srcs/sources_1/new/sign_extend.v" \

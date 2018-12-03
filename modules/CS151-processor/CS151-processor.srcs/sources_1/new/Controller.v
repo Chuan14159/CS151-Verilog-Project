@@ -30,11 +30,17 @@ module Controller(
     output [14:0] imm,
     output WE1
     );
+    reg [0:5] RA1,RA2;
     assign MUXsel1 = ins[31];
-    assign rs = ins[30:25];
+    assign rs = RA1;
     assign rd = ins[24:19];
     assign ALUopsel = ins[18:15];
-    assign rt = ins[14:9];
+    assign rt = RA2;
     assign imm = ins[14:0];
     assign WE1 = (ALUopsel!=0);
+    
+    always@(*) begin
+        if(ALUopsel == 4'b1001) begin RA1 = ins[24:19]; RA2 = ins[30:25]; end
+        else  begin RA1 = ins[30:25]; RA2 = ins[14:9]; end
+    end
 endmodule
