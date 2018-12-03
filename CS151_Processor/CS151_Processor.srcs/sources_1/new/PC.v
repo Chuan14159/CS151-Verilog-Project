@@ -28,6 +28,6 @@ module PC(
     reg [5:0] out;
     assign addrout = out;
     always @ (posedge clk) begin
-        out = addrin;
+        out = addrin + 1;
     end
 endmodule

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Fall 2018/CS151/CS151-Verilog-Project/modules/SHIFT/SHIFT.srcs/sources_1/new/CS151_SHIFT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CS151_SHIFT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Fall 2018/CS151/CS151-Verilog-Project/modules/SHIFT/SHIFT.srcs/sim_1/new/CS151_SHIFT_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CS151_SHIFT_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Fall 2018/CS151/CS151-Verilog-Project/modules/SHIFT/SHIFT.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

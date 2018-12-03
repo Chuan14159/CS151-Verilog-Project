@@ -23,7 +23,7 @@
 module CS151_Processor(
     input reset,
     input clk,
-    input [5:0] addrin,addrout,
+    input [5:0] addr,
     output [31:0] ALUresult,
     output overflow,
     output equal,
@@ -49,10 +49,8 @@ module CS151_Processor(
     wire [14:0] imm;
     wire WE1;      
     wire [31:0] RD2,ext_imm,OA,OB;
-    integer inc = 1;
-    //PC CLK(.clk(clk),.addrin(addrin),.addrout(addrout));
-    //inc6bit INC(.a(addrout),.out(addrin));
-    insMem IM(.addr(addrout),.RD(instruction));
+    
+    insMem IM(.addr(addr),.RD(instruction));
     Controller CTRL(.ins(instruction),.ALUopsel(ALUopsel),.MUXsel1(MUXsel1),.rs(rs),.rt(rt),.rd(rd),.imm(imm),.WE1(WE1));
     RegFile64x32 RF(.reset(reset),.clk(clk),.WE1(WE1),.RA1(rs),.RA2(rt),.WA(rd),.WD(ALUresult),.RD1(OA),.RD2(RD2));
     sign_extend SE(.a(imm),.out(ext_imm));

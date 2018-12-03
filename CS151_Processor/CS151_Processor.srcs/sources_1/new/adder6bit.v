@@ -22,7 +22,7 @@
 
 module inc6bit(
     input [5:0] a,
-    output [6:0] out
+    output [5:0] out
     );
     assign out = a+1;
 endmodule
