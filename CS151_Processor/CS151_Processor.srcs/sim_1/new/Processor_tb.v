@@ -24,7 +24,7 @@ module Processor_tb();
 
 reg reset;
 reg clk;
-reg [5:0] addrin,addrout;
+reg [5:0] addrin = 0,addrout = 0;
 wire overflow;
 wire equal;
 wire carry;

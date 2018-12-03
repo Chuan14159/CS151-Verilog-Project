@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1543793285">
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1543801469">
   <File Type="PA-TCL" Name="CS151_Processor.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="CS151_Processor_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="CS151_Processor_reports.tcl"/>
@@ -111,6 +111,22 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/CS151-Processor.v">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PC.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/adder6bit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
