@@ -1,0 +1,83 @@
+/*
+
+Vivado v2017.2 (64-bit)
+SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+
+Process ID: 15324
+License: Customer
+
+Current time: 	12/2/18 5:49:07 PM PST
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 14 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Vivado/2017.2/tps/win64/jre
+JVM executable location: 	D:/Vivado/2017.2/tps/win64/jre/bin/java.exe
+Java library paths: D:/Vivado/2017.2/bin/unwrapped/win64.o;C:/WINDOWS/Sun/Java/bin;C:/WINDOWS/system32;C:/WINDOWS;D:/Vivado/2017.2/bin;D:/Vivado/2017.2/lib/win64.o;D:/Vivado/2017.2/tps/win64/jre/bin/server;D:/Vivado/2017.2/tps/win64/jre/bin;D:/Vivado/2017.2/ids_lite/ISE/bin/nt64;D:/Vivado/2017.2/ids_lite/ISE/lib/nt64;D:/Vivado_HLS/2017.2/bin;C:/Program Files (x86)/Common Files/Oracle/Java/javapath;C:/Program Files (x86)/Intel/iCLS Client/;C:/Program Files/Intel/iCLS Client/;C:/WINDOWS/system32;C:/WINDOWS;C:/WINDOWS/System32/Wbem;C:/WINDOWS/System32/WindowsPowerShell/v1.0/;C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL;C:/Program Files/Intel/Intel(R) Management Engine Components/DAL;C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT;C:/Program Files/Intel/Intel(R) Management Engine Components/IPT;C:/Program Files/PuTTY/;C:/WINDOWS/System32/OpenSSH/;C:/cygwin64/bin;C:/Users/Sirge/AppData/Local/Microsoft/WindowsApps;C:/Users/Sirge/AppData/Local/GitHubDesktop/bin;D:/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/bin;D:/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/libexec/gcc/x86_64-w64-mingw32/6.2.0;.
+
+User name: 	Sirge
+User home directory: C:/Users/Sirge
+User working directory: C:/Users/Sirge/subtractor
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: D:/Vivado
+HDI_APPROOT: D:/Vivado/2017.2
+RDI_DATADIR: D:/Vivado/2017.2/data
+RDI_BINDIR: D:/Vivado/2017.2/bin
+
+User preferences location: C:/Users/Sirge/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/Sirge/AppData/Roaming/Xilinx/Vivado/2017.2/vivado.xml
+Vivado layouts directory: C:/Users/Sirge/AppData/Roaming/Xilinx/Vivado/2017.2/layouts
+PlanAhead jar location: 	D:/Vivado/2017.2/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	C:/Users/Sirge/subtractor/.Xil/Vivado-15324-WINDOWS-4RJ3JO3
+
+GUI allocated memory:	180 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 567 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 34 MB (+33059kb) [00:00:10]
+// [Engine Memory]: 454 MB (+324848kb) [00:00:10]
+// Opening Vivado Project: C:\Users\Sirge\subtractor\subtractor.xpr. Version: Vivado v2017.2 
+// bs:g (cg:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Sirge/subtractor/subtractor.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 59 MB (+24538kb) [00:00:12]
+// [Engine Memory]: 528 MB (+53780kb) [00:00:12]
+// [GUI Memory]: 68 MB (+6763kb) [00:00:13]
+// [Engine Memory]: 557 MB (+1968kb) [00:00:13]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2017.2/data/ip'. 
+// Project name: subtractor; location: C:/Users/Sirge/subtractor; part: xc7k70tfbv676-1
+// HMemoryUtils.trashcanNow. Engine heap size: 567 MB. GUI used memory: 36 MB. Current time: 12/2/18 5:49:08 PM PST
+dismissDialog("Open Project"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (sub.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sub (sub.v)]", 1, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sub (sub.v)]", 1, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
