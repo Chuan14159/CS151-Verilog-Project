@@ -7079,3 +7079,15 @@ selectCodeEditor("sub.v", 1425, 326); // ce (w, ck)
 // Elapsed time: 10 seconds
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CS151_Processor (CS151-Processor.v), ALU : ALU32bit (ALU32bit.v), SLL : CS151_SHIFT (CS151_SHIFT.v)]", 14, false); // B (D, ck)
 selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CS151_Processor (CS151-Processor.v), ALU : ALU32bit (ALU32bit.v), SLL : CS151_SHIFT (CS151_SHIFT.v)]", 14, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 58 seconds
+selectCodeEditor("CS151_SHIFT.v", 203, 178); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sub.v", 4); // k (j, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CS151_Processor (CS151-Processor.v), ALU : ALU32bit (ALU32bit.v), SUB : sub (sub.v)]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CS151_Processor (CS151-Processor.v), ALU : ALU32bit (ALU32bit.v), SUB : sub (sub.v)]", 9, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CS151_Processor (CS151-Processor.v), ALU : ALU32bit (ALU32bit.v), AND : andder (and.v)]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CS151_Processor (CS151-Processor.v), ALU : ALU32bit (ALU32bit.v), SUB : sub (sub.v)]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CS151_Processor (CS151-Processor.v), ALU : ALU32bit (ALU32bit.v), SUB : sub (sub.v)]", 9, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("sub.v", 286, 64); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CS151_Processor (CS151-Processor.v), ALU : ALU32bit (ALU32bit.v), AND : andder (and.v)]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CS151_Processor (CS151-Processor.v), ALU : ALU32bit (ALU32bit.v), SUB : sub (sub.v)]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CS151_Processor (CS151-Processor.v), ALU : ALU32bit (ALU32bit.v), SUB : sub (sub.v)]", 9, false, false, false, false, false, true); // B (D, ck) - Double Click
