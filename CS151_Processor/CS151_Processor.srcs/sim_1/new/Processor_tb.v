@@ -24,7 +24,7 @@ module Processor_tb();
 
 reg reset;
 reg clk;
-reg [5:0] addr;
+reg [5:0] addrin,addrout;
 wire overflow;
 wire equal;
 wire carry;
@@ -41,16 +41,15 @@ wire [31:0] ALUresult;
 //wire WE1;      
 //wire [31:0] RD2,ext_imm,OA,OB;
 //insMem IF(.addr(addr),.RD(instruction));
-
-CS151_Processor PC(.reset(reset),.clk(clk),.addr(addr),.ALUresult(ALUresult),.overflow(overflow),.equal(equal),.carry(carry)/*test*,.instruction(),.ALUopsel(ALUopsel)*/);
+integer i;
+CS151_Processor PC(.reset(reset),.clk(clk),.addrin(addrin),.addrout(addrout),.ALUresult(ALUresult),.overflow(overflow),.equal(equal),.carry(carry)/*test*,.instruction(),.ALUopsel(ALUopsel)*/);
 initial begin
 
-addr = 0; reset = 1; clk = 1;
+addrin = 0; reset = 1; clk = 1;
 #5 clk = 0;#5 clk = 1; reset = 0;
-#5 clk = 0; #5 clk = 1; addr = addr+1; 
-#5 clk = 0; #5 clk = 1; addr = addr+1; 
-#5 clk = 0; #5 clk = 1; addr = addr+1; 
-#5 clk = 0; #5 clk = 1; addr = addr+1; 
-#5 $finish;
+for(i = 0; i < 27; i=i+1) begin
+    #5 clk = 0; #5 clk = 1; 
+end
+#5 clk = 0; #5 $finish;
 end
 endmodule
